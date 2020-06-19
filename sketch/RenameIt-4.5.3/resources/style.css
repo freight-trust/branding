@@ -1,0 +1,57 @@
+/**
+ * @Author: Rodrigo Soares <rodrigo>
+ * @Date:   2017-10-28T08:09:29-07:00
+ * @Project: Rename It
+ * @Last modified by:   rodrigo
+ * @Last modified time: 2017-12-02T18:00:37-08:00
+ */
+
+html {
+  box-sizing: border-box;
+  background: transparent;
+
+  /* Prevent the page to be scrollable */
+  overflow: hidden;
+
+  /* Force the default cursor, even on text */
+  cursor: default;
+
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  position: relative;
+
+  /* Prevent the content from being selectionable */
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+html,
+body,
+#root,
+#mainContent,
+.container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  letter-spacing: -0.09px;
+  font-size: 14px;
+  margin: 0;
+  /* overflow: hidden; */
+}
+
+.container {
+  padding: 24px;
+}

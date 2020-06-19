@@ -1,0 +1,101 @@
+{
+	"name": "🐳 蓝湖 ",
+    "icon": "logo.png",
+	"description" : "蓝湖,简单好用的团队工作台.无缝连接产品、设计、研发流程，降低沟通成本，缩短开发周期，提高工作效率. 更新完成后请重启Sketch.",
+	"authorEmail" : "nieyujiang@bxzz.net",
+	"homepage": "https://lanhuapp.com/",
+	"identifier" : "com.lanhuSketch.smallStone1",
+	"compatibleVersion": "46",
+    "bundleVersion": "2.5.0",
+	"build": 5,
+	"version": "2.5.0",
+    "appcast": "https://alistatic.lanhuapp.com/Sketch/new/appcast_new.xml",
+	"commands": [
+        {
+            "script": "script.js",
+            "handler": "select",
+            "name": "上传所选 Artboard",
+            "shortcut": "command l",
+            "identifier": "lanhuselect"
+        },
+        {
+            "script": "script.js",
+            "handler": "all",
+            "name": "上传全部 Artboard",
+            "shortcut": "ctrl command l",
+            "identifier": "lanhuall"
+        },
+        {
+            "script": "script.js",
+            "handler": "clean",
+            "name": "清除登录信息",
+            "shortcut": "ctrl command k",
+            "identifier": "clean"
+        },
+        {
+            "script": "script.js",
+            "handler": "archive",
+            "name": "日志打包",
+            "shortcut": "ctrl command j",
+            "identifier": "archive"
+        },
+        {
+            "script": "script.js",
+            "handler": "diffDesgin",
+            "name": "设计图对比（走查）",
+            "shortcut": "ctrl command O",
+            "identifier": "diffDesgin"
+        },
+        {
+            "script": "script.js",
+            "handler": "diffDesginHelp",
+            "name": "设计图对比（走查）使用说明",
+            "identifier": "diffDesginHelp"
+        },
+        {
+            "script": "fix.js",
+            "handler": "fix",
+            "name": "权限修复",
+            "identifier": "fix"
+        },
+        {
+            "script" : "script.js",
+            "handlers" : {
+                "actions" : {
+                    "Startup" : "onStartup",
+                    "OpenDocument": "onOpenDocument",
+                }
+            }
+        },
+        {
+            "script": "script.js",
+            "handler": "reset",
+            "name": "插件重置",
+            "identifier": "reset"
+        },
+	],
+	"menu": {
+		"isRoot" : false,
+		"title": "🐳 蓝湖 ",
+        "items": [
+            "lanhuselect",
+            "lanhuall",
+            {
+                "title": "设计图对比",
+                "items": [
+                    "diffDesgin",
+                    "diffDesginHelp",
+                ]
+            },
+            {
+                "title": "更多",
+                "items": [
+                    "clean",
+                    "archive",
+                    "fix",
+                    "reset",
+                ]
+            }
+        ]
+	}
+}
