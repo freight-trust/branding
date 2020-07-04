@@ -1,12 +1,17 @@
 {
-  "name": "freight-trust-aesthetics",
+  "name": "@freight-trust/branding",
   "description": "react based design components",
   "version": "1.5.0",
   "license": "Apache-2.0",
   "main": "lib/index.js",
   "module": "es/index.js",
-  "repository": "https://github.com/freight-trust/branding",
-  "bugs": "https://github.com/freight-trust/branding/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/freight-trust/branding.git"
+  },
+  "bugs": {
+    "url": "https://github.com/freight-trust/branding/issues"
+  },
   "files": [
     "lib/**/*",
     "es/**/*",
@@ -20,15 +25,15 @@
     "freight-trust-design-system",
     "components"
   ],
-"publishConfig": { 
-"registry": "https://npm.pkg.github.com/" 
+  "publishConfig": {
+    "registry": "https://npm.com"
   },
   "scripts": {
-    "build": "yarn clean && node scripts/build.js && rollup -c",
+    "build": "npm clean && node scripts/build.js && rollup -c",
     "build-storybook": "cross-env NODE_ENV=production build-storybook",
     "clean": "rimraf es lib umd storybook-static build react-docgen.json",
-    "prepublish": "yarn build",
-    "start": "yarn storybook",
+    "prepublish": "npm build",
+    "start": "npm storybook",
     "storybook": "rimraf node_modules/.cache/storybook && start-storybook -p 9000"
   },
   "peerDependencies": {
@@ -135,13 +140,15 @@
     ]
   },
   "contributors": [
-    {
-      "name": "carbon-design-team",
-      "email": "authors"
-    }
+    "carbon-design-team <authors>"
   ],
   "bundleSizeThreshold": 120000,
   "release": {
     "branch": "master"
-  }
+  },
+  "homepage": "https://github.com/freight-trust/branding#readme",
+  "directories": {
+    "example": "examples"
+  },
+  "author": "freight-trust-corporation"
 }
