@@ -12,6 +12,7 @@
 
 ## Overview
 
+
 > A quick overview of how our colouring scheme is to be used
 
 - [x] Every color has its own role in the system and colors live in groups. 
@@ -21,11 +22,30 @@
 - [x] Hover colors are obviously used for hover states and Support colors are used for all Errors, Warnings, Success and Info messages
 
 
+## Packages
+
+
+Packages are broken down into the following categories:
+
+*	@freight-trust-{component-name}
+*	@freight-trust-{platform-package}
+*	@freight-trust-{specific-program-env}
+
+
+### Typograph
+
+Graphie
+Roboto
+No
+
 ### Branding Assets 
+
 - Adobe Illustrator Vector File 
 - Android and iOS default files
 - Web Manifest for PWA
 - Additional Images, e.g. Github Social 
 
 ### Copyright
-- The FT Logo is a pending trademark of FreightTrust and Clearing Corporation. Permission to use the logo involves a pull-request in this repo. 
+
+(C) 2020 FreightTrust and Clearing Corporation 
+License under original Apache-2.0 License from IBM Corporation and all respective authors
