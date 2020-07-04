@@ -20,8 +20,8 @@
     "freight-trust-design-system",
     "components"
   ],
-  "publishConfig": {
-    "access": "public"
+"publishConfig": { 
+"registry": "https://npm.pkg.github.com/" 
   },
   "scripts": {
     "build": "yarn clean && node scripts/build.js && rollup -c",
