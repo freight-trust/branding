@@ -1,6 +1,5 @@
-*.tar
-*.tar.gz
+node_modules
 *.zip
+*.tar.gz
+*.tar
 
-.DS_Store
-.DS_Store
