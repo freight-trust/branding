@@ -1,0 +1,5 @@
+*.png diff=exif
+*.svg diff=exif
+
+*.figma binary
+*.html text diff=html
