@@ -1,18 +1,15 @@
 {
-  "name": "branding",
+  "name": "freight-trust-branding",
   "version": "1.0.0",
-  "description": "<p align=\"center\"> <img src=\"https://freight-public.s3-us-west-1.amazonaws.com/static/Asset+1.png\"> </p> <br> <!-- Badges Start --> <p align=\"center\"> <img alt=\"Twitter Follow\" src=\"https://img.shields.io/twitter/follow/freighttrustnet?label=%40FreightTrustNet&style=social\"> <img alt=\"Open Source License\" src=\"https://img.shields.io/github/license/freight-trust/gateway?style=social\"> <!-- Badges End -->",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "files": "./*",
+  "description": "Branding and Style Guide for FreightTrust and Clearing Corporation",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/freight-trust/branding.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Corporate <corporate@freighttrust.com>",
+  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/freight-trust/branding/issues"
   },
